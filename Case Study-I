@@ -1,0 +1,7 @@
+a = int(input("Enter cost of first item: $"))
+b = int(input("Enter cost of second item: $"))
+c = int(input("Enter cost of third item: $"))
+sum = a+b+c
+if sum>50:
+  sum = float(90/100*sum)
+print("Total amount is: $",sum)
