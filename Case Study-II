@@ -1,0 +1,19 @@
+import random
+a = random.choice(range(1,101))
+print("Computer guessed a number")
+b = 0
+attempts = 0
+print("Enter a number between 1 and 100")
+while(b!=a):
+  attempts +=1
+  b = int(input("Enter your choice:"))
+  if attempts<7:
+    if b==a:
+      print(f"Congratulations!!, your guessed the number correct in {attempts} attempts")
+    elif b>a:
+      print(f"Too HIGH, Try AGAIN!")
+    elif b<a:
+      print(f"TOO LOW, TRY AGAIN!")
+  else:
+    print(f"GAME OVER!!, The Number was {a}")
+    break
